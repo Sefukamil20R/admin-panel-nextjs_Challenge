@@ -65,7 +65,7 @@ admin-panel-nextjs_Challenge/
 ├── public/
 │   └── user-avatar.png
 │   └── placeholder-map.jpg
-├── components/           # (optional) Widgets or charts split here
+├── components/           
 ├── README.md
 ├── package.json
 ```
