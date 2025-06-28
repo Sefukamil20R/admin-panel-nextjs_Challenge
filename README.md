@@ -1,4 +1,4 @@
-# 🛠️ Admin Panel - Next.js Challenge
+# 🛠️ Admin Panel
 
 This is a **responsive admin dashboard** built using **Next.js**, **TypeScript**, and **CSS** (no Tailwind). It aims for **pixel-perfect UI** based on a Figma prototype, showcasing various metrics, widgets, and charts for management overview.
 
