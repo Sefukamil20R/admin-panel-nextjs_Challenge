@@ -72,9 +72,6 @@ admin-panel-nextjs_Challenge/
 
 ---
 
-## 🖼️ Screenshots
-
-> You can upload UI screenshots here to show the dashboard.
 
 ---
 
