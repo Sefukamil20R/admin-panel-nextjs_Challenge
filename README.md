@@ -1,4 +1,4 @@
-# 🛠️ Admin Panel
+# 🛠️ Admin Panel 
 
 This is a **responsive admin dashboard** built using **Next.js**, **TypeScript**, and **CSS** (no Tailwind). It aims for **pixel-perfect UI** based on a Figma prototype, showcasing various metrics, widgets, and charts for management overview.
 
@@ -11,17 +11,17 @@ This is a **responsive admin dashboard** built using **Next.js**, **TypeScript**
 
 ## 📦 Features
 
-✅ Sidebar navigation
-✅ Header section
-✅ Four widgets showing key metrics
-✅ Three pie charts (Red, Green, Blue)
-✅ Bar chart (Order data)
-✅ Revenue line chart
-✅ Customer map (placeholder image)
-✅ Customer reviews section
-✅ User table with pagination
-✅ Mobile responsiveness
-✅ Clean folder structure
+* ✅ Sidebar navigation
+* ✅ Header section
+* ✅ Four widgets showing key metrics
+* ✅ Three pie charts (Red, Green, Blue)
+* ✅ Bar chart (Order data)
+* ✅ Revenue line chart
+* ✅ Customer map (placeholder image)
+* ✅ Customer reviews section
+* ✅ User table with pagination
+* ✅ Mobile responsiveness
+* ✅ Clean folder structure
 
 ---
 
@@ -70,10 +70,8 @@ admin-panel-nextjs_Challenge/
 ├── package.json
 ```
 
----
 
 
----
 
 
- built for the `admin-panel-nextjs_Challenge`.
+built for the `admin-panel-nextjs_Challenge`.
