@@ -135,7 +135,7 @@ const Dashboard = () => {
             <p>Total Revenue</p>
           </div>
           <div className={styles.chart}>
-            <img src="/customermap.png" alt="Map" style={{ width: '100%', height: '180px' }} />
+            <Image src="/customermap.png" alt="Map" width={300} height={180} style={{ width: '100%', height: '180px', objectFit: 'cover' }} />
             <p>Customer Map</p>
           </div>
         </section>
@@ -181,7 +181,7 @@ const Dashboard = () => {
                 <Image src="/user1.png" alt="Food" width={80} height={80} />
                 <div>
                   <h4>{user.name}</h4>
-                  <p>"Delicious and great experience!"</p>
+                  <p>&quot;Delicious and great experience!&quot;</p>
                   <span>⭐⭐⭐⭐☆</span>
                 </div>
               </div>
