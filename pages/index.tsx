@@ -32,6 +32,7 @@ const revenueData = [
 
 const Dashboard = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const usersPerPage = 4;
 
   const users = Array.from({ length: 20 }, (_, i) => ({
@@ -52,7 +53,17 @@ const Dashboard = () => {
       <Head>
         <title>Admin Dashboard</title>
       </Head>
-      <div className={styles.sidebar}>
+      {/* Hamburger for mobile */}
+      <button
+        className={styles.hamburger}
+        onClick={() => setSidebarOpen(!sidebarOpen)}
+        aria-label="Toggle sidebar"
+      >
+        <span className={styles.hamburgerBar}></span>
+        <span className={styles.hamburgerBar}></span>
+        <span className={styles.hamburgerBar}></span>
+      </button>
+      <div className={styles.sidebar + (sidebarOpen ? ' ' + styles.open : '')}>
         <div className={styles.logo}>Sedap.</div>
         <ul className={styles.navList}>
           <li className={styles.active}>Dashboard</li>
@@ -64,18 +75,17 @@ const Dashboard = () => {
           <li>Foods</li>
           <li>Reviews</li>
           <li>Reviews</li>
-         <li>Food Detail</li>
+          <li>Food Detail</li>
           <li>Calendar</li>
           <li>Chat</li>
           <li>Wallet</li>
-
         </ul>
         <div className={styles.promoBox}>
           <Image src="/sidebar.png" alt="Promo" width={100} height={100} />
           <p>Sedap Restaurant Admin Dashboard</p>
         </div>
       </div>
-      <div className={styles.mainContent}>
+      <div className={styles.mainContent} onClick={() => sidebarOpen && setSidebarOpen(false)}>
         <header className={styles.header}>
           <div>
             <h2>Dashboard</h2>
@@ -86,6 +96,7 @@ const Dashboard = () => {
             <Image src="/notification.png" alt="Notif" width={24} height={24} />
             <Image src="/heroavator.png" alt="Avatar" width={32} height={32} className={styles.avatar} />
           </div>
+        {/* ...existing code... */}
         </header>
 
         <section className={styles.widgets}>
@@ -135,7 +146,7 @@ const Dashboard = () => {
             <p>Total Revenue</p>
           </div>
           <div className={styles.chart}>
-            <Image src="/customermap.png" alt="Map" width={300} height={180} style={{ width: '100%', height: '180px', objectFit: 'cover' }} />
+            <img src="/customermap.png" alt="Map" style={{ width: '100%', height: '180px' }} />
             <p>Customer Map</p>
           </div>
         </section>
@@ -181,7 +192,7 @@ const Dashboard = () => {
                 <Image src="/user1.png" alt="Food" width={80} height={80} />
                 <div>
                   <h4>{user.name}</h4>
-                  <p>&quot;Delicious and great experience!&quot;</p>
+                  <p>"Delicious and great experience!"</p>
                   <span>⭐⭐⭐⭐☆</span>
                 </div>
               </div>

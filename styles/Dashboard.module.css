@@ -1,3 +1,99 @@
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.hamburgerBar {
+  width: 28px;
+  height: 4px;
+  background: #333;
+  margin: 3px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+  }
+  .sidebar {
+    position: fixed;
+    left: -260px;
+    top: 0;
+    height: 100vh;
+    transition: left 0.3s;
+    z-index: 1000;
+    width: 220px;
+    max-width: 80vw;
+    min-width: 0;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+    border-radius: 0 24px 24px 0;
+    background: #fff;
+    padding: 20px 10px;
+    overflow-y: auto;
+  }
+  .sidebar.open {
+    left: 0;
+  }
+  .mainContent {
+    padding: 12px;
+  }
+  .widgets, .chartsSection, .reviewSection {
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px;
+  }
+  .widget, .chart, .reviewCard {
+    width: 100%;
+    min-width: 0;
+  }
+  .reviews {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 8px;
+  }
+  .sidebar {
+    padding: 10px 4px;
+    width: 80vw;
+    max-width: 90vw;
+  }
+  .mainContent {
+    padding: 4px;
+  }
+  .widgets, .chartsSection, .reviewSection {
+    padding: 4px;
+    border-radius: 8px;
+  }
+  .widget, .chart, .reviewCard {
+    padding: 6px;
+    border-radius: 8px;
+  }
+  .table th, .table td {
+    padding: 4px;
+    font-size: 12px;
+  }
+  .logo {
+    font-size: 16px;
+  }
+}
 .container {
   display: flex;
   height: 100vh;
